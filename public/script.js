@@ -74,7 +74,7 @@ let time = 0;
 let timer;
 let topDogsI = 0;
 let topDog;
-let countdown = 200;
+let countdown = 1000;
 $(".alert").hide();
 
 $(".btn").on("click", function(event){
@@ -92,13 +92,12 @@ $(".btn").on("click", function(event){
 function beginRace() {
     time++;
     
-    if(time === 200){
+    if(time === 1000){
         clearInterval(timer);
         $("#welcometxt").hide();
         $("#pagetimer").hide();
         $("#countdown").hide();
         $(".alert").show();
-        $(".btn").show();
     };
     
     alfieRun();
